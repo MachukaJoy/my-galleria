@@ -28,9 +28,9 @@ This is a Django application for personal gallery that allows a user to upload i
 
 To get the project .......  
   
-##### Cloning the repository:  
+##### Fork then Clone the repository:  
  ```bash 
- https://github.com/MachukaJoy/my-galleria.git 
+git clone https://github.com/MachukaJoy/my-galleria.git 
 ```
 ##### Navigate into the folder
  ```bash 
@@ -42,7 +42,7 @@ pipenv –-three
 ```
 ##### Activate Virtual Environment
  ```bash 
-- pipenv shell 
+pipenv shell 
 ```  
 ##### Install Dependencies  
  ```bash 

@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
- <h1>
-     Welcome
- </h1> 
+{%block content%}
+ {{ block.super}}
+<h1>Mi Galleria</h1>
+<a href="{% url 'photos' %}" class="btn btn-outline-info btn-small">View Photos</a>
+ {%endblock%}
