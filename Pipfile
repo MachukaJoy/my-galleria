@@ -4,8 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==1.11"
 django-bootstrap4 = "*"
+django = "==2.2.8"
+python-dotenv = "*"
+pathlib = "*"
 
 [dev-packages]
 
