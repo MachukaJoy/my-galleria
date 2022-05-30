@@ -32,22 +32,26 @@ To get the project .......
  ```bash 
  https://github.com/MachukaJoy/my-galleria.git 
 ```
-##### Navigate into the folder and install requirements  
+##### Navigate into the folder
  ```bash 
-cd my-galleria pip install -r requirements.txt 
+cd my-galleria
 ```
-##### Install and activate Virtual  
+##### Create and activate virtual environment  
  ```bash 
-- python3 -m venv virtual - source virtual/bin/activate  
+pipenv –-three
+```
+##### Activate Virtual Environment
+ ```bash 
+- pipenv shell 
 ```  
 ##### Install Dependencies  
  ```bash 
- pip install -r requirements.txt 
+ pipenv  install -r requirements.txt 
 ```  
  ##### Setup Database  
   SetUp your database User,Password, Host then make migrate  
  ```bash 
-python manage.py makemigrations gallerydb 
+python manage.py makemigrations gallery
  ``` 
  Now Migrate  
  ```bash 
@@ -57,13 +61,9 @@ python manage.py makemigrations gallerydb
  ```bash 
  python manage.py runserver 
 ``` 
-##### Running the application  
- ```bash 
- python manage.py server 
-```
 ##### Testing the application  
  ```bash 
- python manage.py test 
+ python manage.py test gallery
 ```
 Open the application on your browser `127.0.0.1:8000`.
 
