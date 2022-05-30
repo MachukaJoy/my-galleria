@@ -38,8 +38,28 @@ class PhotosTestClass(TestCase):
     self.new_pic = Photos(photo_name = 'Mum', photo_description = 'Mama bear', photo_location = self.new_location, photo_category = self.new_category, photo = 'image.jpg' )
     self.new_pic.save()
 
+  def tearDown(self):
+    Photos.objects.all().delete()
+    Location.objects.all().delete()
+    Category.objects.all().delete()
+
   def test_instance(self):
     self.assertTrue(isinstance(self.new_pic, Photos))
 
-  def pic(self):
-    self.new_pic.save_image()
+  def test_save_pic(self):
+    self.new_pic.save_photo()
+    photo = Photos.objects.all()
+
+  def test_delete_pic(self):
+    self.new_pic.save_photo()
+    self.new_pic.delete_photo()
+
+class CategoryTestClass(TestCase):
+
+    def setUp(self):
+      self.family= Category(category_name ='family')
+      self.family.save_category_name()
+
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.family, Category))

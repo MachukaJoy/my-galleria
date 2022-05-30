@@ -11,6 +11,12 @@ class Photos(models.Model):
     def __str__(self):
         return self.photo_name
 
+    def save_photo(self):
+        self.save()
+
+    def delete_photo(self):
+      self.save()
+
 
 class Location(models.Model):
     location_name = models.CharField(max_length = 30)
