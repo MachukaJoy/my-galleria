@@ -1,0 +1,16 @@
+<h1 >
+    photo
+</h1>
+{% for photos in photo %}
+<ul >
+  <li>
+      {{photos.photo_name}}
+  </li>
+  <li>
+      {{photos.photo_description}}
+  </li>
+
+</ul>
+<img src="{{photos.photo.url}}" class="img-responsive" alt="cant show">
+
+{% endfor %}
