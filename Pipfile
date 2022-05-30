@@ -8,6 +8,8 @@ django-bootstrap4 = "*"
 django = "==2.2.8"
 python-dotenv = "*"
 pathlib = "*"
+pillow = "*"
+psycopg2 = "*"
 
 [dev-packages]
 
