@@ -12,6 +12,10 @@ pillow = "*"
 psycopg2 = "*"
 whitenoise = "*"
 django-heroku = "*"
+dj-database-url = "*"
+config = "*"
+python-decouple = "*"
+gunicorn = "*"
 
 [dev-packages]
 
