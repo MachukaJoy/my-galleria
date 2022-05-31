@@ -20,7 +20,7 @@ class Photos(models.Model):
       return photo
 
     def __str__(self):
-      return self.photo_name
+      return self.name
 
 
 class Location(models.Model):
