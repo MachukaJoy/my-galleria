@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
 {%block content%}
- {{ block.super}}
-<h1 style="  font-size:50px; margin-top:60px;">Mi Galleria</h1>
-<h1 style="  font-size:50px; margin-top:60px;">A picture is worth a thousand words.</h1>
-<a href="{% url 'photos' %}" class="btn btn-outline-success btn-small">Take a peep</a>
- {%endblock%}
+{{ block.super }}
+
+<div class="container-fluid" style="background-image: url('https://images.unsplash.com/photo-1471293413508-2cb95f2d2e9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');  background-repeat: no-repeat; background-size: cover; height: 100vh;  background-position: center; text-align:center; overflow-x:hidden;" >
+    <h1 style="  font-size:50px; margin-top:60px; color:rgb(5, 85, 58); font-family: 'Lobster Two', cursive;" >Mi Galleria</h1>
+    <p style="color: rgb(14, 187, 115);">“Taking pictures is savoring life intensely, every hundredth of a second.” <br>
+        ― Marc Riboud</p>
+    <a href="{% url 'photos' %}" class="btn btn-info btn-small">Take a Peep</a>
+
+</div>
+{%endblock%}
