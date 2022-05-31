@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ae7500887a19a757d0ed7a58740271b79a7b51b78e31411562de3b856e2e0679"
+            "sha256": "51d2600c86b2db4ec211ad64ded24a46e2391cd84f94ca35c4c79dc4cd54ba76"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -24,6 +24,13 @@
             "markers": "python_version >= '3.6'",
             "version": "==4.11.1"
         },
+        "dj-database-url": {
+            "hashes": [
+                "sha256:4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163",
+                "sha256:851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"
+            ],
+            "version": "==0.5.0"
+        },
         "django": {
             "hashes": [
                 "sha256:a4ad4f6f9c6a4b7af7e2deec8d0cbff28501852e5010d6c2dc695d3d1fae7ca0",
@@ -39,6 +46,14 @@
             ],
             "index": "pypi",
             "version": "==21.1"
+        },
+        "django-heroku": {
+            "hashes": [
+                "sha256:2bc690aab89eedbe01311752320a9a12e7548e3b0ed102681acc5736a41a4762",
+                "sha256:6af4bc3ae4a9b55eaad6dbe5164918982d2762661aebc9f83d9fa49f6009514e"
+            ],
+            "index": "pypi",
+            "version": "==0.3.1"
         },
         "importlib-metadata": {
             "hashes": [

@@ -11,6 +11,7 @@ pathlib = "*"
 pillow = "*"
 psycopg2 = "*"
 whitenoise = "*"
+django-heroku = "*"
 
 [dev-packages]
 
