@@ -24,7 +24,7 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 <a href="" data-toggle="modal" data-target="#staticBackdrop{{photos.id}}">
-                    <img src="{{photos.photo.url}}" class="img-responsive styled" alt="cant show"></a>
+                    <img src="{{photos.photo.url}}" class="img-responsive styled" style="object-fit: cover;width: 300px;height: 400px;" alt="cant show"></a>
             </div>
             <div class="panel-footer text-center"><b>{{photos.name}}</b></div>
         </div>
@@ -46,7 +46,7 @@
                     <div class="modal-body">
 
                         <img src="{{photos.photo.url}}" class="img-responsive" alt="cant show"
-                            style=" box-shadow: 0 4px 8px 0 rgba(11, 10, 14, 0.87)">
+                            style=" box-shadow: 0 4px 8px 0 rgba(11, 10, 14, 0.87);object-fit: cover;width: 300px;height: 400px;">
                     </div>
 
                     <div class="modal-footer">
