@@ -9,13 +9,15 @@ django = "==2.2.8"
 python-dotenv = "*"
 pathlib = "*"
 pillow = "*"
-psycopg2 = "*"
+psycopg2 = "==2.8.6"
 whitenoise = "*"
 django-heroku = "*"
 dj-database-url = "*"
 config = "*"
 python-decouple = "*"
 gunicorn = "*"
+zipp = "*"
+importlib-metadata = "*"
 
 [dev-packages]
 

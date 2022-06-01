@@ -1,3 +1,11 @@
-.home{
-  color: rgba(193, 230, 195, 0.473);
+body{
+  background-color: rgb(194, 228, 181);
 } 
+/* .panel-body{
+  height: 100px;
+  background-image: url(your-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+/* style="box-shadow: 0 4px 8px 0 rgba(2, 65, 21, 0.534);background-image:url({{photos.photo.url}});background-size: cover;background-position: center;background-repeat: no-repeat;height: 500px;width: auto; */

@@ -1,20 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content%}
-{{ block.super}}
-<!-- <div class="container-fluid"> -->
+{{ block.super }}
 <div class='container-fluid'>
     <div class="row">
         {% for photos in photo %}
         <div class="col-md-3">
-
-           
             <div class="panel panel-default">
-                <div class="panel-body" style=" box-shadow: 0 4px 8px 0 rgba(11, 10, 14, 0.87)">
+                <!-- <div class="panel-body" style="box-shadow: 0 4px 8px 0 rgba(2, 65, 21, 0.534);background-image:url({{photos.photo.url}});background-size: cover;background-position: center;background-repeat: no-repeat;height: 500px;width: auto;" > -->
+                    <div class="panel-body" style="box-shadow: 0 4px 8px 0 rgb(0, 10, 3); background-color: rgb(46, 110, 38);">
                     <a href="" data-toggle="modal" data-target="#staticBackdrop{{photos.id}}">
-                        <img src="{{photos.photo.url}}" class="img-responsive styled" alt="cant show"></a>
+                        <img class="img-responsive styled" src ="{{photos.photo.url}}" alt="cant show" style="object-fit: cover;width: 300px;height: 400px;"></a>
                 </div>
-                <div class="panel-footer text-center" style="font-family: 'Patrick Hand', cursive;">
+                <div class="panel-footer text-center">
                     <b>{{photos.name}}</b></div>
             </div>
 
@@ -26,8 +24,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
 
-                            <h3 class="modal-title" id="staticBackdropLabel text-center"
-                            style="font-family: 'Patrick Hand', cursive;">{{photos.name}}</h3>
+                            <h3 class="modal-title" id="staticBackdropLabel text-center">{{photos.name}}</h3>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -54,7 +51,7 @@
                             <div class="col-md-8">
                                 <input type="text" value="https://machukagalleria.herokuapp.com/media/{{photos.photo}}"
                                     id="myInput">
-                                <button class="btn btn-info" onclick="myFunction()">Copy Link</button>
+                                <button class="btn btn-success" onclick="myFunction()">Copy Link</button>
                             </div>
                             <div class="col-md-4">
                                 <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>

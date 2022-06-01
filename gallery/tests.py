@@ -8,9 +8,6 @@ class LocationTestClass(TestCase):
     self.Kilifi = Location(location_name='Kilifi')
     self.Kilifi.save_location_name()
 
-  def tearDown(self):
-        Location.objects.all().delete()
-
   def test_instance(self):
     self.assertTrue(isinstance(self.Kilifi, Location))
 
@@ -20,17 +17,15 @@ class LocationTestClass(TestCase):
     print(Locations)
     self.assertTrue(len(Locations)==1)
 
-  def test_update_location(self):
-    new_location.update_location(self.location.id,new_location_name)
-    updated_location = Location.objects.filter(location_name='Kilifi')
-    self.assertTrue(len(updated_location) > 0)
-
   def test_delete_method(self):
     self.Kilifi.delete_location_name()
     Locations = Location.objects.all()
     print(Locations)
     self.assertTrue(len(Locations)==0)
 
+
+  def tearDown(self):
+    Location.objects.all().delete()
 
 class PhotosTestClass(TestCase):
   def setUp(self):
