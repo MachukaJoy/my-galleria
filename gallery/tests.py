@@ -35,7 +35,7 @@ class PhotosTestClass(TestCase):
     self.new_category = Category(category_name = 'Adventure')
     self.new_category.save()
 
-    self.new_pic = Photos(name = 'Mum', photo_description = 'Mama bear', photo_location = self.new_location, photo_category = self.new_category, photo = 'image.jpg' )
+    self.new_pic = Photos(name = 'Mum', photo_description = 'Mama bear', photo_location = self.new_location, photocategory = self.new_category, photo = 'image.jpg' )
     self.new_pic.save()
 
   def tearDown(self):
