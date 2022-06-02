@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
-
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 import os
 import django_heroku
 import dj_database_url
@@ -37,14 +39,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'gallery',
+    'bootstrap4',
+    'cloudinary',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'gallery',
-    'bootstrap4'
+    
 ]
 
 MIDDLEWARE = [
@@ -153,5 +157,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# adding config
+cloudinary.config( 
+  cloud_name = os.environ.get("CLOUD_NAME"), 
+  api_key = os.environ.get("API_KEY"), 
+  api_secret = os.environ.get("API_SECRET")
+)
 
 django_heroku.settings(locals(), databases=False)

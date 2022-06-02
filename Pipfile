@@ -19,6 +19,7 @@ gunicorn = "*"
 zipp = "*"
 importlib-metadata = "*"
 sqlparse = "*"
+cloudinary = "*"
 
 [dev-packages]
 
